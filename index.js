@@ -19,11 +19,16 @@ else {
     shipping = 5;
 }
 if (shippingAdress.match("Bayern")) {
-    taxPercent = .05;
+    taxPercent = 0.1;
 }
 else {
-    taxPercent = 0.1;
+    taxPercent = .05;
 }
 taxTotal = product.price * taxPercent;
 total = product.price + taxTotal + shipping;
+console.log(productName);
+console.log(shippingAdress);
+console.log(product.price);
+console.log(taxTotal);
+console.log(shipping);
 console.log(total);
